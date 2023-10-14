@@ -62,7 +62,7 @@ public class ProcesadorCsv implements Callable<List<Funkos>> {
                 String[] procesar =fr.readLine().split(",");
                 UUID cod;
                 try{
-                    cod=UUID.fromString(procesar[0]);
+                    cod=UUID.fromString(procesar[0]);// si nos da error crea uno automaticamente
                 }catch (IllegalArgumentException e){
                     cod=UUID.randomUUID();
                 }
