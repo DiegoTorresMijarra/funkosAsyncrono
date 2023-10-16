@@ -4,8 +4,9 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
+ * Interfaz genérica para operaciones CRUD (Create, Read, Update, Delete) en una base de datos.
  * @author Diego
- * @param <T> Entidad
+ * @param <T> tipo de la entidad a gestionar.
  */
 public interface CrudRepository<T> {
 

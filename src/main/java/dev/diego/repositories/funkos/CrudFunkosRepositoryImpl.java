@@ -11,12 +11,33 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * Implementacion de CrudFunkosRepository.
+ * @author Diego
+ * @version 1.0
+ * @see CrudFunkosRepository
+ */
+
 public class CrudFunkosRepositoryImpl implements CrudFunkosRepository {
 
+    /**
+     * Instancia de DataBaseManager.
+     */
     private final DataBaseManager dataBaseManager;
+
+    /**
+     * Constructor de la clase.
+     * @param db DataBaseManager
+     */
     public CrudFunkosRepositoryImpl(DataBaseManager db){
         dataBaseManager =db;
     }
+
+    /**
+     * Metodo que devuelve una lista de todos los funkos de la base de datos.
+     * @return lista de funkos
+     * @throws SQLException
+     */
     @Override
     public List<Funkos> findAll() throws SQLException {
         dataBaseManager.openConnection();
@@ -33,7 +54,6 @@ public class CrudFunkosRepositoryImpl implements CrudFunkosRepository {
                     result.getDouble("precio"),
                     LocalDate.parse(result.getString("fecha_lanzamiento"))
             );
-
             funkosList.add(funko);
         }
 
@@ -41,6 +61,12 @@ public class CrudFunkosRepositoryImpl implements CrudFunkosRepository {
         return funkosList;
     }
 
+    /**
+     * Metodo que devuelve un funko por su id.
+     * @param id Id de la entidad
+     * @return Funkos con el id dado
+     * @throws SQLException
+     */
     @Override
     public Funkos findById(Integer id) throws SQLException {
         dataBaseManager.openConnection();
@@ -58,6 +84,12 @@ public class CrudFunkosRepositoryImpl implements CrudFunkosRepository {
         return funko;
     }
 
+    /**
+     * Metodo que inserta un funko en la base de datos.
+     * @param entity Entidad
+     * @return null
+     * @throws SQLException
+     */
     @Override
     public Funkos insert(Funkos entity) throws SQLException {
         String sql = "INSERT INTO mediciones VALUES(null, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -87,6 +119,11 @@ public class CrudFunkosRepositoryImpl implements CrudFunkosRepository {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * Metodo que devuelve un funko por su nombre.
+     * @return Funkos con el nombre dado
+     * @throws SQLException
+     */
     @Override
     public Funkos findByNombre() throws SQLException {
         dataBaseManager.openConnection();
@@ -104,6 +141,12 @@ public class CrudFunkosRepositoryImpl implements CrudFunkosRepository {
         return funko;
     }
 
+    /**
+     * Metodo que inserta una lista de funkos en la base de datos.
+     * @param list a insertar
+     * @return null
+     * @throws SQLException
+     */
     @Override
     public List<Funkos> insertAll(List<Funkos> list) throws SQLException {
         dataBaseManager.openConnection();

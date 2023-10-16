@@ -19,6 +19,14 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+/**
+ * Clase que procesa un archivo csv y devuelve una lista de Funkos
+ * @see Funkos
+ * @see Callable
+ * @author Diego
+ * @version 1.0
+ */
+
 public class ProcesadorCsv implements Callable<List<Funkos>> {
     /**
      * instancia Procesador
@@ -44,6 +52,12 @@ public class ProcesadorCsv implements Callable<List<Funkos>> {
         }
         return instancia;
     }
+
+    /**
+     * Procesa el archivo csv y devuelve una lista de Funkos
+     * @return Lista de Funkos
+     * @throws Exception
+     */
     @Override
     public List<Funkos> call() throws Exception {
         String archivoCsv=dataPath+File.separator+csvFile;

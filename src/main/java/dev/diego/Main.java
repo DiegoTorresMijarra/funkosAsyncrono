@@ -10,6 +10,13 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.concurrent.*;
 
+/**
+ * Clase principal de la aplicación FunkosAsyncrono
+ *
+ * @author Diego
+ * @version 1.0
+ *
+ */
 public class Main {
     public static void main(String[] args) {
         ProcesadorCsv pCsv=ProcesadorCsv.getInstancia();

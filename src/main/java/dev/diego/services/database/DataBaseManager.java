@@ -10,8 +10,7 @@ import java.util.Optional;
 import java.util.Properties;
 
 /**
- * Clase que gestiona la conexión con la base de datos
- * y las operaciones CRUD
+ * Clase que gestiona la conexión con la base de datos y las operaciones CRUD
  * @author Diego
  * @version 1.0
  */
@@ -53,11 +52,6 @@ public class DataBaseManager {
      */
     private String driver;
 
-    /**
-     * Indica si se inicializa la base de datos
-     * @see boolean
-     */
-    private boolean initDataBase;
 
     /**
      * Sentencia preparada
