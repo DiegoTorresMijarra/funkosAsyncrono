@@ -7,13 +7,12 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class HikariCPDataSource {
-    private static HikariConfig config = new HikariConfig("hikari.propierties");
-    private static HikariDataSource dataSource =new HikariDataSource(config);
+      private HikariConfig config ;
+       HikariDataSource dataSource ;
 
 
-    HikariCPDataSource() {}
-
-    public static Connection getConnection() throws SQLException {
-        return dataSource.getConnection();
+    HikariCPDataSource() {
+        config = new HikariConfig("hikari.propierties");
+        dataSource =new HikariDataSource(config);
     }
 }

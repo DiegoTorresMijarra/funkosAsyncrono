@@ -1,5 +1,7 @@
 package dev.diego.services.database;
 
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
 import org.apache.ibatis.jdbc.ScriptRunner;
 
 import java.io.*;
@@ -71,7 +73,8 @@ public class DataBaseManager {
     private DataBaseManager() {
         initConfig();
         try {
-            connection = HikariCPDataSource.getConnection();
+            HikariCPDataSource hikariCPDataSource=new HikariCPDataSource();
+            connection = hikariCPDataSource.dataSource.getConnection();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -112,8 +115,9 @@ public class DataBaseManager {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
+
+
 
     /**
      * Método que abre la conexion a la base de datos
