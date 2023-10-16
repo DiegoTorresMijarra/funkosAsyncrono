@@ -19,6 +19,9 @@ dependencies {
     //h2
     implementation("com.h2database:h2:2.2.224")
 
+    //ibaitis
+    implementation("org.mybatis:mybatis:3.5.13")
+
 }
 
 tasks.test {
