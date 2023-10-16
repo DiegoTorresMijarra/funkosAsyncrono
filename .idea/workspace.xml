@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83bb9592-4a32-48e5-ab3e-1bb793062b87" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/diego/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/diego/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/diego/controllers/ProcesadorCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/diego/controllers/ProcesadorCsv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/diego/enunms/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/diego/enunms/Modelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/diego/models/Funkos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/diego/models/Funkos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/diego/repositories/base/CrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/diego/repositories/base/CrudRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/diego/repositories/funkos/CrudFunkosRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/diego/repositories/funkos/CrudFunkosRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/diego/repositories/funkos/CrudFunkosRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/diego/repositories/funkos/CrudFunkosRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/diego/services/database/DataBaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/diego/services/database/DataBaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/diego/services/database/HikariCPDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/diego/services/database/HikariCPDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +35,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="funkosAsyncrono" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="funkosAsyncrono" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -108,7 +106,7 @@
       <recent name="C:\Users\Diego\Desktop\GradoSuperior\DesarrolloWebServidor\funkosAsyncrono\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.funkosAsyncrono [javadoc]">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="DniBueno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.diego.Dni.DniBueno" />
       <module name="funkosAsyncrono.main" />
@@ -222,7 +220,7 @@
       <workItem from="1697385477727" duration="5850000" />
       <workItem from="1697412671364" duration="7353000" />
       <workItem from="1697435986716" duration="6195000" />
-      <workItem from="1697465360053" duration="1048000" />
+      <workItem from="1697465360053" duration="2097000" />
     </task>
     <servers />
   </component>
